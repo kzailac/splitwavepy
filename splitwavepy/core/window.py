@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+YAML file with requirements for the project.# -*- coding: utf-8 -*-
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -37,7 +37,7 @@ class Window:
         if samps%2 != 1:
             raise Exception('samps must be odd to have definite centre')
         else:
-            centre = np.int(samps/2)
+            centre = int(samps/2)
             return centre + self.offset - hw
 
     def end(self,samps):
